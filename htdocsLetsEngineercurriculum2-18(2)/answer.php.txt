@@ -1,0 +1,54 @@
+<link rel="stylesheet" href=answer.css text=text/css>
+
+<div id="style">
+<?php 
+//[question.php]から送られてきた名前の変数、選択した回答、問題の答えの変数を作成
+
+//選択した回答と正解が一致していれば「正解！」、一致していなければ「残念・・・」と出力される処理を組んだ関数を作成する
+
+?>
+<p><?php
+$my_name=$_POST['text'];
+?>
+<?php echo $my_name;?>さんの結果は・・・？</p>
+<span>
+<p>①の答え</p>
+<!--作成した関数を呼び出して結果を表示-->
+
+function radio($question1,$answer1){
+<?php
+$question1 =$_POST['$question1];
+$answer1=$_POST['answer1'];
+
+ if($question1 == $answer1){
+$result1="正解！";
+｝else {
+$result1="残念・・・";
+｝
+
+echo radio();
+
+?>
+<p>②の答え</p>
+<!--作成した関数を呼び出して結果を表示-->
+function radio($qestion2,$answer2){
+<?php 
+$question2 =$_POST[$question2];
+$answer2 =$_POST[$answer2];
+
+}
+?>
+echo radio();
+<p>③の答え</p>
+<!--作成した関数を呼び出して結果を表示-->
+function radio($question3,$answer3){
+<?php
+$question3=$_POST['$question3'];
+$answer3=$_POST[];
+
+}
+echo radio();
+
+?>
+</div>
+</span>

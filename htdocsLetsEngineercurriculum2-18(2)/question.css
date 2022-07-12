@@ -1,0 +1,30 @@
+h2 {
+	text-align: center;
+	color: white;
+}
+
+p {
+	text-align: center;
+	color: white;
+}
+
+div {
+	text-align: center;
+	margin: 0 auto;
+	padding: 35px;
+	color: white;
+}
+
+.style {
+	background-color: gray;
+	height: 250vh;
+}
+
+input[type="radio"]:not(:checked) + .radio-text:before {
+	border-color: white;
+	background-color: white;
+}
+
+input[type="radio"]:checked + .radio-text:before {
+	background-color: white;
+}
